@@ -1,12 +1,10 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 public class Movement : MonoBehaviour
 {
     // The Rigidbody attached to the GameObject.
     public Rigidbody body;
-    /// <summary>
-    /// Speed scale for the velocity of the Rigidbody.
-    /// </summary>
-    public float speed;
     /// <summary>
     /// Rotation Speed scale for turning.
     /// </summary>
@@ -19,6 +17,8 @@ public class Movement : MonoBehaviour
     private float horizontal;
     // Whether or not the player is on the ground.
     private bool isGrounded;
+
+    private float isBoosting;
 
     private float resetTime = 0f;
     // Initialization function
@@ -36,18 +36,6 @@ public class Movement : MonoBehaviour
         } else
         {
             resetTime = 0f;
-            horizontal = Input.GetAxis("Horizontal");
-            bool reset = Input.GetButtonDown("Reset");
-            if (reset)
-            {
-                ResetRocket();
-            }
-            Debug.Log(Input.GetAxis("Jump"));
-            if (Input.GetAxis("Jump") > 0)
-            {
-                body.AddForce(transform.up * jumpForce);
-            }
-            
         }
     }
 
@@ -55,8 +43,26 @@ public class Movement : MonoBehaviour
         if (resetTime <= 0)
         {
             transform.Rotate((transform.forward * horizontal * -1f) * rotationSpeed * Time.fixedDeltaTime);
+            body.AddForce(transform.up * jumpForce * isBoosting);
         }
     }
+
+    public void OnRotate(InputAction.CallbackContext value)
+    {
+        Vector2 inputMovement = value.ReadValue<Vector2>();
+        horizontal = inputMovement.x;
+    }
+
+    public void OnReset(InputAction.CallbackContext value)
+    {
+        ResetRocket();
+    }
+
+    public void OnBoost(InputAction.CallbackContext value)
+    {
+        isBoosting = value.ReadValue<float>();
+    }
+    
     // This function is a callback for when an object with a collider collides with this objects collider.
     void OnCollisionEnter(Collision collision)
     {
