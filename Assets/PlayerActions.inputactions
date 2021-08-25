@@ -76,6 +76,39 @@
                     "isPartOfComposite": false
                 },
                 {
+                    "name": "Left Right Buttons",
+                    "id": "ddd71782-428b-4aef-b467-75e451c26db9",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "86f3875e-7915-4cb3-a89e-500de97af984",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DS3 controller",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "694861ac-b269-42da-b29d-a65f331ef149",
+                    "path": "<Gamepad>/dpad/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DS3 controller",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "01dbf8b2-e6a2-4029-8d63-c72a67961c58",
                     "path": "<Keyboard>/space",
@@ -88,11 +121,33 @@
                 },
                 {
                     "name": "",
+                    "id": "10d9ed85-a84a-4eb0-9e64-bb73a477ef17",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DS3 controller",
+                    "action": "Boost",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "00b88242-2bea-473a-91a7-45df94a87a9c",
                     "path": "<Keyboard>/r",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
+                    "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3eb9bd31-eea7-42dc-8872-a69f34a15839",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "DS3 controller",
                     "action": "Reset",
                     "isComposite": false,
                     "isPartOfComposite": false

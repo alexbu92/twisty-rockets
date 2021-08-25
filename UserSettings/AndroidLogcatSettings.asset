@@ -1,0 +1,137 @@
+{
+    "m_SelectedDeviceId": "RF8M30YEY5Y",
+    "m_SelectedPackage": {
+        "deviceId": "RF8M30YEY5Y",
+        "name": "com.DefaultCompany.TwistyRocket",
+        "processId": 31996,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 15791,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 3103,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 24845,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 3113,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 8479,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 10149,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 11008,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 13791,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 19512,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 22524,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 24237,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 31996,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
