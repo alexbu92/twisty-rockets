@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "RF8M30YEY5Y",
         "name": "com.DefaultCompany.TwistyRocket",
-        "processId": 31996,
+        "processId": 31077,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -78,6 +78,36 @@
             "deviceId": "RF8M30YEY5Y",
             "name": "com.DefaultCompany.TwistyRocket",
             "processId": 31996,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 15250,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 24897,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 29851,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 30713,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 31077,
             "exited": false
         }
     ],
