@@ -11,7 +11,8 @@
                     "id": "0b83e3d4-7ac9-4c34-8dba-e6d9a46be955",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Boost",
@@ -19,7 +20,8 @@
                     "id": "194c1b7b-de8c-42da-864c-b9b230ac6fbd",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Reset",
@@ -27,7 +29,8 @@
                     "id": "f112e2a1-fb3b-4ff9-b0d5-d5913e449ff7",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [

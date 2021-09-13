@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
 public class Movement : MonoBehaviour
@@ -13,6 +14,8 @@ public class Movement : MonoBehaviour
     /// The upwards jump force of the player.
     /// </summary>
     public float jumpForce;
+
+    public UnityEvent resetEvent = new UnityEvent();
     // The horizontal input from input devices.
     private float horizontal;
     // Whether or not the player is on the ground.
@@ -21,6 +24,10 @@ public class Movement : MonoBehaviour
     private float isBoosting;
 
     private float resetTime = 0f;
+
+    private const float jumpForceMultiplier = 1000f;
+
+    private bool isPaused = false;
     // Initialization function
     void Start()
     {
@@ -40,10 +47,10 @@ public class Movement : MonoBehaviour
     }
 
     void FixedUpdate() {
-        if (resetTime <= 0)
+        if (resetTime <= 0 && !isPaused)
         {
             transform.Rotate((transform.forward * horizontal * -1f) * rotationSpeed * Time.fixedDeltaTime);
-            body.AddForce(transform.up * jumpForce * isBoosting);
+            body.AddForce(transform.up * jumpForce * isBoosting * Time.fixedDeltaTime * jumpForceMultiplier);
         }
     }
 
@@ -56,6 +63,7 @@ public class Movement : MonoBehaviour
     public void OnReset(InputAction.CallbackContext value)
     {
         ResetRocket();
+        resetEvent.Invoke();
     }
 
     public void OnBoost(InputAction.CallbackContext value)
@@ -94,6 +102,11 @@ public class Movement : MonoBehaviour
         body.rotation = Quaternion.identity;
         body.angularVelocity = Vector3.zero;
         resetTime = 0.5f;
+    }
+
+    public void OnLevelFinished()
+    {
+        isPaused = true;
     }
 
 }

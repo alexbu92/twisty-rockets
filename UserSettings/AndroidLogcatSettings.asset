@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "RF8M30YEY5Y",
         "name": "com.DefaultCompany.TwistyRocket",
-        "processId": 8418,
+        "processId": 20341,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,121 +11,43 @@
         {
             "deviceId": "RF8M30YEY5Y",
             "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 15791,
+            "processId": 22855,
             "exited": true
         },
         {
             "deviceId": "RF8M30YEY5Y",
             "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 3103,
+            "processId": 28901,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 15187,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 15190,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 9238,
+            "exited": true
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.sec.android.app.launcher",
+            "processId": 1660,
             "exited": false
         },
         {
             "deviceId": "RF8M30YEY5Y",
             "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 24845,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 3113,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 8479,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 10149,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 11008,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 13791,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 19512,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 22524,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 24237,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 31996,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 15250,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 24897,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 29851,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 30713,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 31077,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 20584,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 23231,
-            "exited": false
-        },
-        {
-            "deviceId": "RF8M30YEY5Y",
-            "name": "com.DefaultCompany.TwistyRocket",
-            "processId": 8418,
+            "processId": 20341,
             "exited": false
         }
     ],

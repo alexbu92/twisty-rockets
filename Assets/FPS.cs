@@ -1,32 +1,34 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class FPS : MonoBehaviour {
 
-    public int targetFrameRate = 60;
-    string label = "";
-	float count;
+  	public int count;
+	public int samples = 100;
+	public float totalTime;
 
+	public Text fpsText;
 	
-	IEnumerator Start ()
-	{
-        Application.targetFrameRate = 60;
-		GUI.depth = 2;
-		while (true) {
-			if (Time.timeScale == 1) {
-				yield return new WaitForSeconds (0.1f);
-				count = (1 / Time.deltaTime);
-				label = "FPS :" + (Mathf.Round (count));
-			} else {
-				label = "Pause";
-			}
-			yield return new WaitForSeconds (0.5f);
+	public void Start(){
+		Application.targetFrameRate = 60;
+		count = samples;
+		totalTime = 0f;
+	}
+ 
+	public void Update(){
+		count -= 1;
+		totalTime += Time.deltaTime;
+	
+		if (count <= 0) {
+			float fps = samples / totalTime;
+			displayFPS(fps); // your way of displaying number. Log it, put it to text object…
+			totalTime = 0f;
+			count = samples;
 		}
 	}
-	
-	void OnGUI ()
-	{
-        Debug.Log(label);
-		GUI.Label (new Rect (5, 40, 100, 25), label);
+
+	private void displayFPS(float fps) {
+		this.fpsText.text = ((int)fps).ToString();
 	}
 }
