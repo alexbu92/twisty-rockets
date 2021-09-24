@@ -5,6 +5,10 @@ using UnityEngine.Events;
 
 public class GameMaster : MonoBehaviour
 {
+    public Timer timer;
+    public Ghost ghost;
+    public GhostPlayback ghostPlayback;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +21,21 @@ public class GameMaster : MonoBehaviour
         
     }
 
+    public void OnLevelReset()
+    {
+        ghost.StopRecordingGhost();
+        ghostPlayback.StopGhostPlayback();
+        ghost.StartRecordingGhost();
+        ghostPlayback.StartGhostPlayback();
+    }
+
     public void OnFinishLine(float time)
     {
-        Debug.Log("finish time:" + time);
+        ghost.StopRecordingGhost();
+        if (time <= timer.bestTime)
+        {
+            Debug.Log("New best time: " + time);
+            ghostPlayback.setBestReplay(ghost.getCurrentReplay());
+        }
     }
 }

@@ -7,7 +7,10 @@ public class Timer : MonoBehaviour
 {
 
     public Text timerText;
+    public Text bestTimeText;
     public float time = 0f;
+
+    public float bestTime = 9999f;
 
     private bool isPaused = false;
     // Start is called before the first frame update
@@ -34,5 +37,16 @@ public class Timer : MonoBehaviour
     public void OnLevelFinished()
     {
         isPaused = true;
+        if (time < bestTime)
+        {
+            bestTime = time;
+            bestTimeText.text = bestTime.ToString("F2");
+        }
+    }
+
+    public void OnPlayAgain()
+    {
+        onResetTime();
+        isPaused = false;
     }
 }

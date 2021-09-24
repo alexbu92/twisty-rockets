@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "RF8M30YEY5Y",
         "name": "com.DefaultCompany.TwistyRocket",
-        "processId": 20341,
+        "processId": 26061,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -48,6 +48,12 @@
             "deviceId": "RF8M30YEY5Y",
             "name": "com.DefaultCompany.TwistyRocket",
             "processId": 20341,
+            "exited": false
+        },
+        {
+            "deviceId": "RF8M30YEY5Y",
+            "name": "com.DefaultCompany.TwistyRocket",
+            "processId": 26061,
             "exited": false
         }
     ],

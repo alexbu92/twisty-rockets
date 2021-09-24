@@ -28,11 +28,11 @@ public class Movement : MonoBehaviour
     private const float jumpForceMultiplier = 1000f;
 
     private bool isPaused = false;
+
     // Initialization function
     void Start()
     {
-        
- 
+        ResetRocket();
     }
 
     void Update()
@@ -63,7 +63,7 @@ public class Movement : MonoBehaviour
     public void OnReset(InputAction.CallbackContext value)
     {
         ResetRocket();
-        resetEvent.Invoke();
+        
     }
 
     public void OnBoost(InputAction.CallbackContext value)
@@ -81,7 +81,6 @@ public class Movement : MonoBehaviour
         {
             
             ResetRocket();
-           
         }
     }
     // This function is a callback for when the collider is no longer in contact with a previously collided object.
@@ -90,23 +89,39 @@ public class Movement : MonoBehaviour
         if (collision.gameObject.tag == ("Ground"))
         {
             isGrounded = false;
-        } else {
+        } else 
+        {
             ResetRocket();
         }
     }
 
     void ResetRocket()
     {
+        Debug.Log("RESET ROCKET");
         body.position = new Vector3(0, 0.5f, 0);
         body.velocity = Vector3.zero;
         body.rotation = Quaternion.identity;
         body.angularVelocity = Vector3.zero;
-        resetTime = 0.5f;
+        resetTime = 0.1f;
+        resetEvent.Invoke();
     }
 
     public void OnLevelFinished()
     {
         isPaused = true;
+        body.constraints = RigidbodyConstraints.FreezeAll;
+    }
+
+    public void OnPlayAgain()
+    {
+        isPaused = false;
+        FreezeZPositionAndXYRotation();
+        ResetRocket();
+    }
+
+    private void FreezeZPositionAndXYRotation()
+    {
+        body.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
     }
 
 }
